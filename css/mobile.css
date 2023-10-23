@@ -1,0 +1,246 @@
+@charset "utf-8";
+@import url('fonts.css');
+@import url('all.min.css');
+
+
+@media screen and (max-width: 600px) {
+    #wrap {max-width: 600px; padding: 0; margin: 0;}
+    .contWrap {width: 90%; margin: 0; padding: 0 5%;}
+    .inner {width: 100%; margin: 0;}
+
+    /* header : logo lang util */
+    header {width: 100%; height: 3.75em;}    
+    header .logo {
+        position: absolute;         
+        top: 50%; left: 2%; 
+        transform: translateY(-50%);
+        width: 50%; 
+        padding: 0;              
+        vertical-align: middle;          
+    }
+    header .logo a {width: 40%;}
+    header .lang {display: none;}    
+    header .util {position: absolute; top: 0; right: 0;}
+    header .util .good {position: absolute; top: 0.5em; right: 4.5em; font-size: 1.5rem;}
+    header .input_text {display: none;}
+    header .util a {margin-right: 0; font-size: 1.875rem;}
+    header .util .btn {position: absolute; top: 0.2em; right: 2.1em;}
+    header .util .btn img {width: 0.8em; height: 0.8em;}
+    header .util .ham {display: block; position: absolute; top: 0.2em; right: 0.7em;}
+
+    /* header : nav */
+    header .gnb {
+        position: relative;
+        top: 60px; left: 0;         
+        width: 100%; 
+        display: none;
+    }    
+    header .gnb > ul > li {float: none; width: 100%; position: relative; background: white;}
+    header .gnb > ul > li > a {
+        display: block; 
+        position: relative;
+        padding: 0 30px;
+        font-size: 1rem;
+        line-height: 3;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }    
+    header .gnb .sub li {display: none;}  
+    header .gnb > ul > li:before {display: none;}
+    header .gnb > ul > li:hover:before {display: none;} 
+    header .gnb > ul > li:hover .sub {display: none;}  
+    .bgGnb {display: none;}  
+
+    /* main01 : Swifer */ 
+    #main01 {width: 100vw; overflow: hidden; background: rgb(250, 243, 236); position: relative; top: 60px;}
+    #main01 .inner {
+        overflow: hidden;     
+        position: relative; 
+        top: 0; left: 0;  
+        box-sizing: border-box;   
+    }
+    .swiper.mainSwiper .swiper-wrapper .swiper-slide img {width: auto; height: 80%;}
+    .swiper.mainSwiper {
+        overflow: hidden;
+        position: relative;           
+        width: 100vw;
+        height: 63vh;
+        background: rgb(250, 243, 236);
+    }
+    .swiper-wrapper .swiper-slide {          
+        width: auto;
+        height: 63vh; 
+        overflow: hidden;
+        box-sizing: border-box; 
+    }   
+    .swiper-wrapper .swiper-slide .text_area {float: none; width: 100%; padding-top: 1.8em; height: 20%; padding-left: 5%; padding-bottom: 1em;}
+    .swiper-wrapper .swiper-slide .text_area p {padding-bottom: 0;}
+    .swiper-wrapper .text_area .big {font-size: 1.875rem; font-weight: 700;}
+    .swiper-wrapper .text_area .mid {font-size: 1rem; color: #585858;}
+    .swiper-wrapper .text_area .small {font-size: 0.875rem; color: #585858;}
+
+    .swiper-wrapper .swiper-slide figure {     
+        float: none; width: 100%; height: 100%;
+        overflow: hidden;       
+        background-image: no-repeat center center;  
+    }
+    .swiper.mainSwiper .swiper-pagination {
+        display: none;  
+    }
+
+    /* main02 : COLLECTION */
+    #main02 .contWrap {width: auto; padding-top: 6em;}
+    #main02 h2 {text-align: center; padding-bottom: 0;}
+    #main02 .contWrap ul li {float: none; width: 100%;}
+    .title {
+        font-size: 1.25rem; 
+        font-weight: 500;
+        padding: 0.5em 0; 
+    }
+    .sub_title {text-align: center; padding: 0.5em 0; font-size: 1rem; color: #585858;}
+    #main02 .contWrap .contents {width: 100%; padding: 0; margin: 1em 0; position: relative;}
+    #main02 .contWrap .contents figure {float: none; width: 100%; margin-top: 1.5em;}
+    #main02 .contWrap .contents .desc {float: none; width: 100%; margin: 1.25em 0 0 0;}
+    .contents .desc .big {font-size: 2rem; font-weight: 500; margin-bottom: 0.4em;}
+    .contents .desc .mid {font-size: 1.5rem; margin-bottom: 0.6em;}
+    .contents .desc p {font-size: 1rem; margin-bottom: 1em; color: #333;}
+    .contents .desc .square {width: 100%; float: none;}        
+    .contents .desc .square p {float: left; margin: 1em 1em 1em 0; font-size: 1rem;}
+    .contents .desc .square span img {width: 100px; height: 100px; display: block;}
+    .contents .desc .square .more {position: absolute; bottom: -1em; right: 0; border-bottom: 1px solid #111;}
+
+    /* main03 : NEWS */
+    #main03 .contWrap {width: auto;}    
+    #main03 .contWrap .n_titlearea {text-align: center; padding-top: 1em;}
+    #main03 .contWrap .n_titlearea .small {color: #585858; text-align: center; padding-bottom: 6.25em;} 
+    #main03 .contWrap .n_titlearea .more {position: absolute; top: 10em; right: 5%;}    
+
+    #main03 .news_contents div {float: none; width: 100%; padding-left: 0;}
+    .news_contents .right figure {
+        height: 17em; 
+        background: url(../img/sec03_right.jpg) no-repeat center center/cover; 
+        margin-bottom: 1.25em;
+    } 
+    .news_contents .right .nr_textarea {width: 100%; margin-bottom: 1em;}
+    .news_contents .right .nr_textarea .nr_title {font-size: 1.5rem; color: #111; padding-bottom: 0.3em;}
+    .news_contents .right .nr_textarea p:nth-child(2) {margin-bottom: 0em;}
+
+    .news_contents .news_list {width: 100%; overflow: hidden; box-sizing: border-box; padding: 0;}
+    .news_contents .news_list .nl_textarea p {-webkit-line-clamp: 2; margin: 0;}
+    .news_contents .news_list .nl_textarea span {display: block; font-size: 1rem; font-weight: 500; color: #111;} 
+
+    /* main04 : SNS */
+    #main04 .contWrap {width: auto; margin-bottom: 3.125em;}    
+    #main04 .contWrap .sns_contents {width: 100%; overflow: hidden;}
+    #main04 .contWrap .sns_contents li {
+        float: left;
+        width: calc(100%/2 - 10px);
+        margin: 10px 10px 0 0;        
+    }
+    .s_titlearea .small {color: #585858; text-align: center; padding-bottom: 2em;}
+
+    /* footer */
+    footer .contWrap {width: auto; padding: 0 5%; position: relative; font-size: 0.875rem; margin-top: 2em; padding-bottom: 16em;}
+    footer .contWrap img {width: 25%;}
+    .f_logo {position: absolute; top: 0; left: 5%;}
+    .f_text {position: absolute; top: 3em; left: 5%;}
+    .f_text .person {font-weight: 500; font-size: 1em;}
+    .f_text p, address {margin-bottom: 10px; line-height: 1.4;}
+    .familyArea {position: relative;}
+    .familyArea .family {
+        position: absolute; top: -2.6em; right: 0;
+        border-radius: 20px;
+        background: black;
+        color: white;
+        padding: 0.5em 0;
+        font-size: 0.938rem;
+        display: block;
+    } 
+    .familyArea .family i {margin-left: 0.5em;}
+    .top-btn {
+        position: fixed;
+        bottom: 3.125em; right: 1em;
+        border-radius: 50px;
+        width: 2.5em; height: 2.5em;
+        text-align: center;
+        vertical-align: middle;
+        background: #585858;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    /* main01 : Swifer */ 
+    .swiper-wrapper .swiper-slide .text_area {float: none; width: 100%; padding-top: 0.8em; height: 20%; padding-left: 5%; padding-bottom: 2em;}
+    .swiper-wrapper .swiper-slide figure {     
+        float: none; width: 100%; height: 100%;
+        overflow: hidden;       
+        background-image: no-repeat center center;  
+    }
+
+    /* main02 : COLLECTION */
+    .contents .desc .square span img {width: 5em; height: 5em; display: block;}
+
+    /* main03 : NEWS */
+    #main03 .contWrap .n_titlearea .more {position: absolute; top: 9em; right: 5%;} 
+    #main03 .contWrap .n_titlearea {text-align: center; padding-top: 0em;}
+    .news_contents .right figure {
+        height: 13em; 
+        background: url(../img/sec03_right.jpg) no-repeat center center/cover; 
+        margin-bottom: 1em;
+    }    
+    .news_contents .right .nr_textarea {width: 100%; line-height: 2;}/*  */
+    .news_contents .right .nr_textarea .nr_title {font-size: 1.2rem; color: #111;}
+    .news_contents .right .nr_textarea p {line-height: 1.4; margin-bottom: 0em;}    
+    .news_contents .right .nr_textarea time {color: #888;}
+    .news_contents .news_list {padding: 0.5em; font-size: 0.875rem;} 
+    .news_contents .news_list figure {float: left; width: 23%; margin-right: 0.625em;}
+    .news_contents .news_list .nl_textarea span {font-size: 0.875rem; letter-spacing: -2px;}
+    .news_contents .news_list .nl_textarea p {-webkit-line-clamp: 1; margin: 0;}
+
+    /* main04 : SNS */
+
+    /* footer : modal box - familyArea */
+    .familyArea {position: absolute; top: 0; right: 0; z-index: 50;}
+    .familyArea .family {
+        position: absolute;
+        top: 0; right: 1em;
+        border-radius: 1.25em;
+        background: black;
+        color: white;
+        width: 10em;    
+        padding: 0.375em 0;
+        font-size: 0.875rem;
+        display: block;
+    }
+    .familyArea .family i {margin-left: 0.6em;}
+    .familyArea .familyBox {
+        position: absolute;
+        bottom: 0.625em; right: 1em;    
+        padding: 0 1em;
+        display: none;   
+        background: #fff;
+        width: 18em; height: 15em;  
+        border: 1px solid #111;
+        font-size: 0.9rem;
+        z-index: 100;
+        line-height: 1.7;
+    } 
+    .familyBox.active {display: block;} 
+    .close {
+        position: absolute;
+        width: 2em; height: 2em;
+        background: black;
+        color: white;
+        top: 0; right: 0; 
+        font-size: 1.25rem;         
+    }
+    .familyBox span {font-size: 0.9rem; font-weight: 600; display: block; margin-bottom: 0.1em; color: #111;}
+    .familyBox p {margin-bottom: 0.6em; color: #444; line-height: 1.7;}
+    .familyBox a {
+        float: left;
+        width: 50%;
+        font-size: 0.9rem;
+        line-height: 1.8;
+    }
+}
