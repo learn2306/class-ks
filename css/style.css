@@ -84,7 +84,8 @@ header .util {position: absolute; top: 0; right: 0;}
 header .util .good {
     position: absolute; 
     top: 34px; right: 370px; 
-    font-size: 24px;     
+    font-size: 24px;
+    color: black;    
 }
 header .util .good:before {
     position: absolute;
